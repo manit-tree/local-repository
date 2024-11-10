@@ -1,0 +1,10 @@
+{
+  "name": "@8columns/my-local-repository",
+  "description": "My local repository",
+  "version": "1.0.0",
+  "author": "Mr.Manit Treeprapankit",
+  "license": "MIT",
+  "scripts": {
+    "push": "git add . && git commit -m \"update\" && git push"
+  }
+}
