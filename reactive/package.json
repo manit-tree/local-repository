@@ -1,0 +1,17 @@
+{
+  "name": "@8columns/reactive",
+  "version": "1.0.0",
+  "description": "Reactive.js - A simple function to make an object reactive!",
+  "main": "dist/index.es.js",
+  "type": "module",
+  "scripts": {
+    "dev": "bun index.ts",
+    "build": "vite build --config vite.config.mjs"
+  },
+  "keywords": [],
+  "author": "Mr.Manit Treeprapankit",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.4.8"
+  }
+}
