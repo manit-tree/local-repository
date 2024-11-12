@@ -12,7 +12,7 @@ export default defineConfig({
         sourcemap: false,
         emptyOutDir: true,   
         lib: {
-            entry: './src/index.js',
+            entry: './src/sortable.complete.esm.js',
             formats: ['es'],
             fileName: (format) => `index.js`
         }

@@ -12,5 +12,6 @@ import 'swiper/css/effect-flip';
 import 'swiper/css/keyboard';
 
 export function swiper(el, options = {}) {
+    options.modules = [Navigation, Pagination, Autoplay, Grid, EffectFade, EffectCoverflow, EffectCube, EffectFlip, Keyboard];
     return new Swiper(el, options);
 }

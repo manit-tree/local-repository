@@ -3,7 +3,7 @@
   "description": "sortable.js wrapper",
   "version": "1.0.0",
   "main": "./dist/index.js",
-  "type": "module",
+  "type":"module",
   "author": "Mr.Manit Treeprapankit",
   "license": "MIT",
   "scripts": {
@@ -17,6 +17,5 @@
     "vite-plugin-css-injected-by-js": "^3.4.0"
   },
   "dependencies": {
-    "sortablejs": "^1.15.3"
   }
 }

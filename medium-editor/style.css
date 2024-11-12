@@ -1,0 +1,36 @@
+@layer reset {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html, body {
+    min-height: 100%;
+  }
+}
+
+@layer base-color {
+  :root {
+    --text-color: #ccc;
+    --bg-color: #121212;
+  }
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  font-family: poppins, sans-serif, tahoma;
+  position: relative;
+  padding: 60px;
+}
+
+#app {
+  width: min(940px, 90vw);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  #editor {
+    width: min(940px, 90vw);
+  }
+}

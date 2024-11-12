@@ -1,0 +1,51 @@
+.medium-editor {
+    position: relative;
+}
+
+[data-role="action-bar"] {
+    display: none;
+ 
+    &.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: yellow;
+        border-radius: 0.5rem;
+        position: absolute;
+        gap: 6px;
+        padding: 6px;
+        pointer-event: all;
+        opacity: 0;
+
+        span {
+            display: block;
+            width: 32px;
+            height: 32px;
+            outline: 1px solid red;
+            cursor: pointer;
+            position: relative;
+            user-select: none;
+
+            &:active {
+                top: 2px;
+            }
+        }
+   }
+
+    &.fade-in {
+        animation-name: fade-in;
+        animation-fill-mode: both;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

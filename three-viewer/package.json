@@ -1,6 +1,6 @@
 {
-  "name": "@8columns/sortable",
-  "description": "sortable.js wrapper",
+  "name": "@8columns/three-viewer",
+  "description": "Three Viewer wrapper",
   "version": "1.0.0",
   "main": "./dist/index.js",
   "type": "module",
@@ -17,6 +17,6 @@
     "vite-plugin-css-injected-by-js": "^3.4.0"
   },
   "dependencies": {
-    "sortablejs": "^1.15.3"
+    "threepipe": "^0.0.33"
   }
 }

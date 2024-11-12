@@ -14,7 +14,7 @@ export default defineConfig({
         lib: {
             entry: './src/index.js',
             formats: ['es'],
-            fileName: (format) => `index.js`
+            fileName: (format) => `[name].js`
         }
     },    
 })
