@@ -1,6 +1,0 @@
-# Logs
-logs
-*.log
-node_modules
-.vscode/*
-!.vscode/extensions.json
