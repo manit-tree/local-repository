@@ -1,0 +1,26 @@
+body {
+    font-family: poppins, sans-serif, tahoma;
+    padding: 60px;
+}
+
+#app {
+    width: min(940px, 90vw);
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.box {
+    height: 240px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
+}

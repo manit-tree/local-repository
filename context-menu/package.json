@@ -1,0 +1,19 @@
+{
+  "name": "@8columns/context-menu",
+  "version": "1.0.0",
+  "description": "Context Menu",
+  "main": "./dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "Mr.Manit Treeprapankit",
+  "license": "MIT",
+  "devDependencies": {
+    "lightningcss": "^1.25.1",
+    "vite": "^5.4.1",
+    "vite-plugin-css-injected-by-js": "^3.4.0"
+  }
+}

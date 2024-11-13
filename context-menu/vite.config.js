@@ -16,5 +16,8 @@ export default defineConfig({
             formats: ['es'],
             fileName: (format) => `[name].js`
         }
+    },
+    server: {
+        hmr: false
     }
 })
