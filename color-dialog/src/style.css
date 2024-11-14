@@ -1,0 +1,32 @@
+[data-id="color-dialog"] {
+    .colors {
+        display: grid;
+        grid-template-columns: repeat(21, 1fr);
+        gap: 4px;
+    
+        span {
+            display: block;
+            aspect-ratio: 1;
+            width: 100%;
+            background-color: var(--color);
+            border-radius: 3px;
+            cursor: pointer;
+
+            &.active {
+                animation-name: color-dialog-animate-flash;
+                animation-duration: 0.8s;
+                animation-iteration-count: infinite;
+            }
+        }
+    }
+}
+
+@keyframes color-dialog-animate-flash {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

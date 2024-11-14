@@ -1,6 +1,6 @@
 {
-  "name": "@8columns/medium-editor",
-  "description": "Medium Editor",
+  "name": "@8columns/color-dialog",
+  "description": "Color Dialog",
   "version": "1.0.0",
   "type": "module",
   "scripts": {

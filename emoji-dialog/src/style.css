@@ -1,0 +1,23 @@
+[data-id="emoji-dialog"] {
+    .emojis {
+        display: grid;
+        grid-template-columns: repeat(24, 1fr);
+        gap: 0;
+    
+        span {
+            display: grid;
+            place-content: center;
+            aspect-ratio: 1;
+            width: 100%;
+            cursor: pointer;
+            user-select: none;
+            font-size: 18px;
+            transform-origin: center;
+            transition: all 0.3s;
+
+            &:hover {
+                transform: scale(1.25);
+            }
+        }
+    }
+}

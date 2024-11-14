@@ -1,6 +1,6 @@
 {
-  "name": "@8columns/action-bar",
-  "description": "Action Bar",
+  "name": "@8columns/modal-dialog",
+  "description": "Modal Dialog",
   "version": "1.0.0",
   "type": "module",
   "scripts": {

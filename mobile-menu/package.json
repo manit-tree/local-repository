@@ -1,8 +1,11 @@
 {
-  "name": "@8columns/medium-editor",
-  "description": "Medium Editor",
+  "name": "@8columns/mobile-menu",
+  "description": "Mobile Menu",
   "version": "1.0.0",
+  "main": "./dist/index.js",
   "type": "module",
+  "author": "Mr.Manit Treeprapankit",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build"
@@ -11,5 +14,8 @@
     "lightningcss": "^1.25.1",
     "vite": "^5.4.1",
     "vite-plugin-css-injected-by-js": "^3.4.0"
+  },
+  "dependencies": {
+    "threepipe": "^0.0.33"
   }
 }

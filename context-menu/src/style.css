@@ -81,7 +81,8 @@
 				svg {
 					width: 16px;
 					color: var(--text-color);
-					transform: scale(var(--scale), 1.0);
+					transform: scaleX(var(--scale), 1.0);
+					transform: scaleY(var(--scale), 1.0);
 				}
 			}
 

@@ -135,10 +135,12 @@ export class ContextMenu {
 						action: action,
 						data: JSON.parse(get_default(li.dataset['data'], '{}')),
 						el: li,
+						host: this.context,
 						context_menu: this
 					}
 
-					let res = handler.bind(this.context)(data);
+					// let res = handler.bind(this.context)(data);
+					let res = handler(data);
 				
 					if (res === false) {
 						ok = false;
@@ -164,6 +166,21 @@ export class ContextMenu {
 	}
 
 	mount(el) {
+		let show_context_menu = (x, y) => {
+			this.update();
+
+			// offset
+			x = x + 10;
+			y = y + 0;
+
+			if (x < this.gap) {x = gap};
+			if (x + this.menu.width + this.gap > window.innerWidth) {x = window.innerWidth - this.menu.width - this.gap };
+			if (y < this.gap) {y = gap};
+			if (y + this.menu.height + this.gap > window.innerHeight) {y = window.innerHeight - this.menu.height - this.gap};
+
+			this.show(x, y, el);			
+		}
+
 		el.addEventListener('contextmenu', evt => {
 			let handler = this.handlers.get('before-show');
 			let res = true;
@@ -175,16 +192,25 @@ export class ContextMenu {
 			evt.preventDefault();
 
 			if (res) {
-				this.update();
-
 				let {x, y} = evt;
+				show_context_menu(x, y);
+			}
+		})
 
-				if (x < this.gap) {x = gap};
-				if (x + this.menu.width + this.gap > window.innerWidth) {x = window.innerWidth - this.menu.width - this.gap };
-				if (y < this.gap) {y = gap};
-				if (y + this.menu.height + this.gap > window.innerHeight) {y = window.innerHeight - this.menu.height - this.gap};
+		el.addEventListener('click', evt => {			
+			let handler = this.handlers.get('before-show');
+			let res = true;
 
-				this.show(x, y, el);
+			if (handler) {
+				res = handler.bind(el)();
+			}
+
+			evt.preventDefault();
+			evt.stopPropagation();
+
+			if (res) {
+				let {x, y} = evt;
+				show_context_menu(x, y);
 			}
 		})
 	}
